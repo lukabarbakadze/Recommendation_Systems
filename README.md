@@ -3,7 +3,7 @@
 ## Matrix Factorization Machine and Youtube Candidate Generator Model
 ---
 The project is based on the following papers:
-* [Factorization Machines](https://www.csie.ntu.edu.tw/~b97053/paper/Rendle2010FM.pdf)
+* [Matrix Factorization](https://arxiv.org/pdf/2203.11026.pdf)
 * [Graph Attention Networks](https://arxiv.org/abs/1710.10903)
 ---
 Dataset:
@@ -35,7 +35,7 @@ Factorization Machine            |  Candidate Generator Model
 ![1](https://github.com/lukabarbakadze/Youtube-RecSys/blob/main/charts/training.png)
 
 ### Files Description
-* models.py - Pytorch (from scratch) implementation of Factorization Machine and Youtube Candidate Generator models
+* models.py - Pytorch (from scratch) implementation of Matrix Factorization and Youtube Candidate Generator models
 * main.ipynb - Main working&training file
 * requirements.txt - Dependencies used in the project
 ---
