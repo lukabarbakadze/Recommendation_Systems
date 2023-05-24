@@ -12,19 +12,35 @@ Dataset:
 ### Results
 #### Model Training
 ![1](https://github.com/lukabarbakadze/Youtube-RecSys/blob/main/charts/training.png)
+#### Matrix Factorization Model
+- Strengths:
+* * Computationally inexpensive model
+* * Can handle sparse data
+* * Quite accurately predicts expected rating
+- Weakneses:
+* * Only capturaes linear relationship between independent and dependent variable
+* * Limited number of users/products (if we want to add new user/item in the system, we have to assign correponding user/movie embedding to it by retraining the model)
+* * Easy to overfit the training data
+#### Youtube Candidate Generation Model
+- Strengths:
+* * Do not have user's limit (user's embedding depends only his/her history)
+* * Captures non-linear and relatively complex relationships between user and products
+- Weaknesses
+* * Computationally expensive (especially when there is high number of products)
+* * Requires more amount of data and more feature engineering
+* 
 
-<!-- ### Files Description
-* Graph_Nets.py - Pytorch (from scratch) implementation of GCN and GAT
-* code.ipynb - Main working&training file
+### Files Description
+* models.py - Pytorch (from scratch) implementation of Factorization Machine and Youtube Candidate Generator models
+* main.ipynb - Main working&training file
 * requirements.txt - Dependencies used in the project
 ---
 ### Table of Contents
 * Imports
-* Dataset
-* * Training
-* * Graph Convolutional Networks
-* * Graph Attention Networks
+* Data Preprocessing
+* * Feature Engineering
+* Matrix Factorization
+* Youtube Candidate Generator model
+* * Feature Engineering II
 * Vizualization
-### Acknowledgements
-* [BASICS OF GRAPH NEURAL NETWORKS](https://lightning.ai/docs/pytorch/stable/notebooks/course_UvA-DL/06-graph-neural-networks.html)
-* [Pytorch-GAT by gordicaleksa at github](https://github.com/gordicaleksa/pytorch-GAT) -->
+---
