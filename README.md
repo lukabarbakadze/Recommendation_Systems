@@ -10,8 +10,10 @@ Dataset:
 * [MovieLens 100k](https://www.kaggle.com/datasets/ayushimishra2809/movielens-dataset)
 ---
 ### Results
-#### Model Training
-![1](https://github.com/lukabarbakadze/Youtube-RecSys/blob/main/charts/training.png)
+#### Model Architectures
+Factorization Machine            |  Candidate Generator Model
+:-------------------------:|:-------------------------:
+![](https://github.com/lukabarbakadze/Youtube-RecSys/blob/main/charts/FactorizationMatrix.png)  |  ![](https://github.com/lukabarbakadze/Youtube-RecSys/blob/main/charts/CandidateGenerator.png)
 #### Matrix Factorization Model
 - Strengths:
 * * Computationally inexpensive model
@@ -28,7 +30,9 @@ Dataset:
 - Weaknesses
 * * Computationally expensive (especially when there is high number of products)
 * * Requires more amount of data and more feature engineering
-* 
+* * Still limited to number of products (because of pre-trained embeddings, adding new product will requre to assign same dimensional embedding vector to new product too)
+#### Model Training
+![1](https://github.com/lukabarbakadze/Youtube-RecSys/blob/main/charts/training.png)
 
 ### Files Description
 * models.py - Pytorch (from scratch) implementation of Factorization Machine and Youtube Candidate Generator models
